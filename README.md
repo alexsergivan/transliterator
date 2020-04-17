@@ -3,6 +3,7 @@ GO Transliterator
 
 [![Build Status](https://travis-ci.com/alexsergivan/transliterator.svg?branch=master)](https://travis-ci.com/github/alexsergivan/transliterator)
 [![Coverage Status](https://coveralls.io/repos/github/alexsergivan/transliterator/badge.svg)](https://coveralls.io/github/alexsergivan/transliterator)
+[![Go Report Card](https://goreportcard.com/badge/github.com/alexsergivan/transliterator)](https://goreportcard.com/report/github.com/alexsergivan/transliterator)
 
 
 GO Transliterator provides one-way string transliteration. It takes Unicode text and coverts to ASCII characters.
@@ -39,10 +40,10 @@ func main() {
 	anotherText := "你好"
 	fmt.Println(trans.Transliterate(anotherText, "")) // Result: Ni Hao
 
-	text := "Київ"
-	fmt.Println(trans.Transliterate(text, "uk")) // Result: Kyiv
-	fmt.Println(trans.Transliterate(text, "en")) // Result: Kiyiv
-	fmt.Println(trans.Transliterate(text, "")) // Result: Kiyiv
+	oneMoreText := "Київ"
+	fmt.Println(trans.Transliterate(oneMoreText, "uk")) // Result: Kyiv
+	fmt.Println(trans.Transliterate(oneMoreText, "en")) // Result: Kiyiv
+	fmt.Println(trans.Transliterate(oneMoreText, "")) // Result: Kiyiv
 }
 ```
 
