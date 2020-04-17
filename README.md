@@ -4,6 +4,7 @@ GO Transliterator
 [![Build Status](https://travis-ci.com/alexsergivan/transliterator.svg?branch=master)](https://travis-ci.com/github/alexsergivan/transliterator)
 [![Coverage Status](https://coveralls.io/repos/github/alexsergivan/transliterator/badge.svg)](https://coveralls.io/github/alexsergivan/transliterator)
 [![Go Report Card](https://goreportcard.com/badge/github.com/alexsergivan/transliterator)](https://goreportcard.com/report/github.com/alexsergivan/transliterator)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9b062cd8ba9f4f7f850e167d6966b75b)](https://www.codacy.com/manual/alexsergivan/transliterator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alexsergivan/transliterator&amp;utm_campaign=Badge_Grade)
 
 
 Golang Transliterator provides one-way string transliteration. It takes Unicode text and coverts to ASCII characters.
