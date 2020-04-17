@@ -1,4 +1,4 @@
-GO Transliterator
+Golang text Transliterator
 ==============
 
 [![Build Status](https://travis-ci.com/alexsergivan/transliterator.svg?branch=master)](https://travis-ci.com/github/alexsergivan/transliterator)
@@ -8,6 +8,7 @@ GO Transliterator
 
 
 Golang Transliterator provides one-way string transliteration. It takes Unicode text and coverts to ASCII characters.
+Example use-case: transliterate cyrilic city name to be able to use it in the url ("Київ" ==> "Куiv").
 
 For now, only these languages have specific transliteration rules: DE, DA, EO, RU, BG, SV, HU, HR, SL, SR, NB, UK, MK, CA, BS. For other languages, general ASCII transliteration rules will be applied. Also, this package supports adding custom transliteration rules for your specific use-case. Please check the examples section below.
 
@@ -20,7 +21,7 @@ go get -u github.com/alexsergivan/transliterator
 ```
 
 
-Language specific transliteration example:
+Language specific transliteration example
 ------
 
 ```go
@@ -48,7 +49,7 @@ func main() {
 }
 ```
 
-Adding of custom Language translitartion rules:
+Adding of custom Language translitartion rules
 ------
 
 ```go
