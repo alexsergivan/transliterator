@@ -1,0 +1,17 @@
+language: go
+go:
+  - '1.13.x'
+  - master
+
+sudo: false
+
+before_install:
+  - if ! go get code.google.com/p/go.tools/cmd/cover; then go get golang.org/x/tools/cmd/cover; fi
+  - go get github.com/axw/gocov/gocov
+  - go get github.com/mattn/goveralls
+
+install:
+  - go get .
+
+script:
+  - $HOME/gopath/bin/goveralls -service=travis-ci

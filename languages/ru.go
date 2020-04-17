@@ -1,0 +1,23 @@
+package languages
+
+// RU - Russian transliteration data.
+var RU = map[rune]string{
+	0x401: "JO",
+	0x451: "jo",
+	0x416: "ZH",
+	0x436: "zh",
+	0x419: "J",
+	0x439: "j",
+	0x427: "CH",
+	0x447: "ch",
+	0x428: "SH",
+	0x448: "sh",
+	0x429: "SHH",
+	0x449: "shh",
+	0x42D: "EH",
+	0x44D: "eh",
+	0x42E: "JU",
+	0x44E: "ju",
+	0x42F: "JA",
+	0x44F: "ja",
+}

@@ -1,0 +1,25 @@
+package languages
+
+// BG - Bulgarian transliteration data.
+var BG = map[rune]string{
+	0x416: "ZH",
+	0x436: "zh",
+	0x419: "Y",
+	0x439: "y",
+	0x426: "TS",
+	0x446: "ts",
+	0x427: "CH",
+	0x447: "ch",
+	0x428: "SH",
+	0x448: "sh",
+	0x429: "SHT",
+	0x449: "sht",
+	0x42A: "A",
+	0x44A: "a",
+	0x42C: "Y",
+	0x44C: "y",
+	0x42E: "YU",
+	0x44E: "yu",
+	0x42F: "ya",
+	0x44F: "Ya",
+}
