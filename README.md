@@ -6,7 +6,7 @@ GO Transliterator
 [![Go Report Card](https://goreportcard.com/badge/github.com/alexsergivan/transliterator)](https://goreportcard.com/report/github.com/alexsergivan/transliterator)
 
 
-GO Transliterator provides one-way string transliteration. It takes Unicode text and coverts to ASCII characters.
+Golang Transliterator provides one-way string transliteration. It takes Unicode text and coverts to ASCII characters.
 
 For now, only these languages have specific transliteration rules: DE, DA, EO, RU, BG, SV, HU, HR, SL, SR, NB, UK, MK, CA, BS. For other languages, general ASCII transliteration rules will be applied. Also, this package supports adding custom transliteration rules for your specific use-case. Please check the examples section below.
 
