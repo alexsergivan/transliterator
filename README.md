@@ -7,7 +7,7 @@ Golang text Transliterator
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9b062cd8ba9f4f7f850e167d6966b75b)](https://www.codacy.com/manual/alexsergivan/transliterator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alexsergivan/transliterator&amp;utm_campaign=Badge_Grade)
 
 
-Golang Transliterator provides one-way string transliteration. It takes Unicode text and coverts to ASCII characters.
+Golang Transliterator provides one-way string transliteration. It takes Unicode text and converts to ASCII characters.
 Example use-case: transliterate cyrilic city name to be able to use it in the url ("Київ" ==> "Куiv").
 
 For now, only these languages have specific transliteration rules: DE, DA, EO, RU, BG, SV, HU, HR, SL, SR, NB, UK, MK, CA, BS. For other languages, general ASCII transliteration rules will be applied. Also, this package supports adding custom transliteration rules for your specific use-case. Please check the examples section below.
