@@ -61,15 +61,15 @@ import (
 )
 
 func main() {
-	customLanguageOverrites := make(map[string]map[rune]string)
+	customLanguageOverwrites := make(map[string]map[rune]string)
 
-	customLanguageOverrites["myLangcode"] = map[rune]string{
+	customLanguageOverwrites["myLangcode"] = map[rune]string{
 		// Ї
 		0x407: "CU",
 		// и
 		0x438: "y",
 	}
-	trans := transliterator.NewTransliterator(&customLanguageOverrites)
+	trans := transliterator.NewTransliterator(&customLanguageOverwrites)
 	text := "КиЇв"
 	fmt.Println(trans.Transliterate(text, "myLangcode")) // Result: KyCUv
 

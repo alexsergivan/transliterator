@@ -10,20 +10,20 @@ import (
 
 // Transliterator structure.
 type Transliterator struct {
-	LanguageOverrides *languages.LanguageOverrides
-	Data              map[rune][]string
+	LanguageOverwrites *languages.LanguageOverwrites
+	Data               map[rune][]string
 }
 
 // NewTransliterator creates Transliterator object.
-func NewTransliterator(customLanguageOverrides *map[string]map[rune]string) *Transliterator {
-	languageOverrides := languages.NewLanguageOverrides()
-	if customLanguageOverrides != nil {
-		languageOverrides.AddLanguageOverrides(customLanguageOverrides)
+func NewTransliterator(customLanguageOverwrites *map[string]map[rune]string) *Transliterator {
+	languageOverwrites := languages.NewLanguageOverwrites()
+	if customLanguageOverwrites != nil {
+		languageOverwrites.AddLanguageOverwrites(customLanguageOverwrites)
 	}
 
 	return &Transliterator{
-		LanguageOverrides: languageOverrides,
-		Data:              data.NewTransliterationData().Data,
+		LanguageOverwrites: languageOverwrites,
+		Data:               data.NewTransliterationData().Data,
 	}
 }
 
@@ -33,8 +33,8 @@ func (t *Transliterator) Transliterate(text, langcode string) string {
 	var replacement strings.Builder
 	runes := []rune(text)
 	for _, rune := range runes {
-		if overrides, ok := t.LanguageOverrides.Overrides[langcode]; ok {
-			if val, ok := overrides[rune]; ok {
+		if overwrites, ok := t.LanguageOverwrites.Overwrites[langcode]; ok {
+			if val, ok := overwrites[rune]; ok {
 				replacement.WriteString(val)
 				continue
 			}
