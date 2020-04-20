@@ -1,31 +1,31 @@
 package languages
 
-// LanguageOverrides structure.
-type LanguageOverrides struct {
-	Overrides map[string]map[rune]string
+// LanguageOverwrites structure.
+type LanguageOverwrites struct {
+	Overwrites map[string]map[rune]string
 }
 
-// NewLanguageOverrides creates new LanguageOverrides object.
-func NewLanguageOverrides() *LanguageOverrides {
-	return &LanguageOverrides{
-		Overrides: initOverrides(),
+// NewLanguageOverwrites creates new LanguageOverwrites object.
+func NewLanguageOverwrites() *LanguageOverwrites {
+	return &LanguageOverwrites{
+		Overwrites: initOverwrites(),
 	}
 }
 
-// AddLanguageOverrides adds custom transliterations overrides.
-func (lo *LanguageOverrides) AddLanguageOverrides(overrides *map[string]map[rune]string) {
-	for langcode, override := range *overrides {
+// AddLanguageOverwrites adds custom transliterations overwrites.
+func (lo *LanguageOverwrites) AddLanguageOverwrites(overwrites *map[string]map[rune]string) {
+	for langcode, override := range *overwrites {
 		lo.AddLanguageOverride(langcode, override)
 	}
 }
 
-// AddLanguageOverride adds custom transliteration overrides for specific language.
-func (lo *LanguageOverrides) AddLanguageOverride(langcode string, override map[rune]string) {
-	lo.Overrides[langcode] = override
+// AddLanguageOverride adds custom transliteration overwrites for specific language.
+func (lo *LanguageOverwrites) AddLanguageOverride(langcode string, override map[rune]string) {
+	lo.Overwrites[langcode] = override
 }
 
-// initOverrides adds some general language specific overrides.
-func initOverrides() map[string]map[rune]string {
+// initOverwrites adds some general language specific overwrites.
+func initOverwrites() map[string]map[rune]string {
 	// Language codes in ISO 639-1 format.
 	return map[string]map[rune]string{
 		"de": DE,
