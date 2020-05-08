@@ -39,7 +39,7 @@ func (t *Transliterator) Transliterate(text, langcode string) string {
 				continue
 			}
 		}
-        // If the rune number less then maximum ASCII value, use it directly.
+		// If the rune number less then maximum ASCII value, use it directly.
 		if rune < unicode.MaxASCII {
 			replacement.WriteString(string(rune))
 			continue
